@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@prisma/client": "^7.10.1",
+    "yarn": "^1.22.22"
+  },
+  "devDependencies": {
+    "prisma": "^8.0.0-rc.23"
+  },
+  "scripts": {
+    "postinstall": "prisma skills sync || exit 0"
+  }
+}
