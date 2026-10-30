@@ -3,16 +3,21 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prisma:migrate": "set DATABASE_URL=%DATABASE_URL_ADMIN% && npx prisma migrate dev",
+    "db:create-app-user": "node scripts/db/create-app-user.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "prisma": "^7.10.0"
+    "prisma": "^7.10.0",
+    "tsx": "^4.23.15"
   },
   "dependencies": {
-    "@prisma/client": "^7.10.0"
+    "@prisma/client": "^7.10.0",
+    "pg": "^8.23.1",
+    "postgres": "^3.4.9"
   }
 }
