@@ -7,6 +7,10 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Diário Financeiro Familiar",
   description: "Controle financeiro familiar inteligente",
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+  },
 }
 
 export default function RootLayout({
